@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite + React</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
+
+
+
+<!-- // import React from "react";
+
+// const TaskList = () => {
+//   return (
+//     <div
+//       id="tasklist"
+//       className="flex items-center justify-start gap-5 overflow-x-auto flex-nowrap h-[55%] w-full py-5  mt-10 "
+//     >
+//       <div className="bg-blue-400 p-5 flex-shrink-0 h-full w-[300px] rounded-xl">
+//         <div className="flex justify-between items-center">
+//           <h3 className="bg-red-600 text-sm px-3 py-1 rounded">High</h3>
+//           <h4 className="text-sm">02 jan 2025</h4>
+//         </div>
+//         <h2 className="mt-5 text-2xl font-semibold">Make a Schedule</h2>
+//         <p className="text-sm mt-2">
+//           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga
+//           accusantium impedit veritatis perspiciatis error molestiae.
+//         </p>
+//       </div>
+//       <div className="bg-blue-400 p-5 flex-shrink-0 h-full w-[300px] rounded-xl">
+//         <div className="flex justify-between items-center">
+//           <h3 className="bg-red-600 text-sm px-3 py-1 rounded">High</h3>
+//           <h4 className="text-sm">02 jan 2025</h4>
+//         </div>
+//         <h2 className="mt-5 text-2xl font-semibold">Make a Schedule</h2>
+//         <p className="text-sm mt-2">
+//           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga
+//           accusantium impedit veritatis perspiciatis error molestiae.
+//         </p>
+//       </div>
+//       <div className="bg-blue-400 p-5 flex-shrink-0 h-full w-[300px] rounded-xl">
+//         <div className="flex justify-between items-center">
+//           <h3 className="bg-red-600 text-sm px-3 py-1 rounded">High</h3>
+//           <h4 className="text-sm">02 jan 2025</h4>
+//         </div>
+//         <h2 className="mt-5 text-2xl font-semibold">Make a Schedule</h2>
+//         <p className="text-sm mt-2">
+//           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga
+//           accusantium impedit veritatis perspiciatis error molestiae.
+//         </p>
+//       </div>
+//       <div className="bg-blue-400 p-5 flex-shrink-0 h-full w-[300px] rounded-xl">
+//         <div className="flex justify-between items-center">
+//           <h3 className="bg-red-600 text-sm px-3 py-1 rounded">High</h3>
+//           <h4 className="text-sm">02 jan 2025</h4>
+//         </div>
+//         <h2 className="mt-5 text-2xl font-semibold">Make a Schedule</h2>
+//         <p className="text-sm mt-2">
+//           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga
+//           accusantium impedit veritatis perspiciatis error molestiae.
+//         </p>
+//       </div>
+//       <div className="bg-blue-400 p-5 flex-shrink-0 h-full w-[300px] rounded-xl">
+//         <div className="flex justify-between items-center">
+//           <h3 className="bg-red-600 text-sm px-3 py-1 rounded">High</h3>
+//           <h4 className="text-sm">02 jan 2025</h4>
+//         </div>
+//         <h2 className="mt-5 text-2xl font-semibold">Make a Schedule</h2>
+//         <p className="text-sm mt-2">
+//           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga
+//           accusantium impedit veritatis perspiciatis error molestiae.
+//         </p>
+//       </div>
+//       <div className="bg-blue-400 p-5 flex-shrink-0 h-full w-[300px] rounded-xl">
+//         <div className="flex justify-between items-center">
+//           <h3 className="bg-red-600 text-sm px-3 py-1 rounded">High</h3>
+//           <h4 className="text-sm">02 jan 2025</h4>
+//         </div>
+//         <h2 className="mt-5 text-2xl font-semibold">Make a Schedule</h2>
+//         <p className="text-sm mt-2">
+//           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga
+//           accusantium impedit veritatis perspiciatis error molestiae.
+//         </p>
+//       </div>
+//       <div className="bg-blue-400 p-5 flex-shrink-0 h-full w-[300px] rounded-xl">
+//         <div className="flex justify-between items-center">
+//           <h3 className="bg-red-600 text-sm px-3 py-1 rounded">High</h3>
+//           <h4 className="text-sm">02 jan 2025</h4>
+//         </div>
+//         <h2 className="mt-5 text-2xl font-semibold">Make a Schedule</h2>
+//         <p className="text-sm mt-2">
+//           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga
+//           accusantium impedit veritatis perspiciatis error molestiae.
+//         </p>
+//       </div>
+
+//     </div>
+//   );
+// };
+
+// export default TaskList;
+// import React from "react";
+
+// const TaskList = () => {
+//   return (
+//     <div
+//       id="tasklist"
+//       className="flex flex-col md:flex-row items-start md:items-center gap-5 overflow-auto h-full w-full py-5 mt-10"
+//     >
+//       {Array(7)
+//         .fill(null)
+//         .map((_, index) => (
+//           <div
+//             key={index}
+//             className="bg-blue-400 p-5 flex-shrink-0 w-full md:w-[300px] rounded-xl"
+//           >
+//             <div className="flex justify-between items-center">
+//               <h3 className="bg-red-600 text-sm px-3 py-1 rounded">High</h3>
+//               <h4 className="text-sm">02 Jan 2025</h4>
+//             </div>
+//             <h2 className="mt-5 text-2xl font-semibold">Make a Schedule</h2>
+//             <p className="text-sm mt-2">
+//               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga
+//               accusantium impedit veritatis perspiciatis error molestiae.
+//             </p>
+//           </div>
+//         ))}
+//     </div>
+//   );
+// };
+
+// export default TaskList;
+// import React from "react";
+
+// const TaskList = ({data}) => {
+//   return (
+//     <div
+//       id="tasklist"
+//       className="overflow-auto h-[62%] md:h-[65%] w-full py-5 mt-10"
+//     >
+//       <div className="flex flex-col  md:flex-row md:items-start items-center gap-5 flex-nowrap">
+//         {Array(7) //how we put 7 different data in the task list
+//           .fill(null)
+//           .map((_, index) => (
+//             <div
+//               key={index}
+//               className="bg-blue-400 p-5 flex-shrink-0  h-full w-[300px] rounded-xl"
+//             >
+//               <div className="flex justify-between items-center">
+//                 <h3 className="bg-red-600 text-sm px-3 py-1 rounded">High</h3>
+//                 <h4 className="text-sm">02 Jan 2025</h4>
+//               </div>
+//               <h2 className="mt-5 text-2xl font-semibold">Make a Schedule</h2>
+//               <p className="text-sm mt-2">
+//                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga
+//                 accusantium impedit veritatis perspiciatis error molestiae.
+//               </p>
+
+//             </div>
+//           ))}
+//       </div>
+//     </div>
+//   );
+// };
+
+// export default TaskList; -->
